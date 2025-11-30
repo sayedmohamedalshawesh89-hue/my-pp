@@ -9,18 +9,18 @@ document.addEventListener('DOMContentLoaded', () => {
     // توليد بطاقات الدورات إذا كنا في صفحة الدورات
     const coursesList = document.getElementById('courses-list');
     if (coursesList) {
-        const courses = [
-            { title: 'أساسيات HTML و CSS', desc: 'ابدأ في بناء صفحات الويب.' },
-            { title: 'جافاسكربت للمبتدئين', desc: 'مفاهيم مهمة لبناء تفاعلية.' },
-            { title: 'تصميم واجهات المستخدم', desc: 'مبادئ UX/UI العملية.' },
-            { title: 'بايثون للمبتدئين', desc: 'مقدمة برمجية مع أمثلة.' }
+        const courses = [{ title: 'HTML & CSS Basics', desc: 'Start building web pages.' },
+{ title: 'JavaScript for Beginners', desc: 'Important concepts for interactivity.' },
+{ title: 'UI Design', desc: 'Practical UX/UI principles.' },
+{ title: 'Python for Beginners', desc: 'A programming introduction with examples.' }
+
         ];
 
 
         courses.forEach(c => {
             const card = document.createElement('div');
             card.className = 'course-card';
-            card.innerHTML = `<h4>${c.title}</h4><p>${c.desc}</p><a class='btn' href='instructors.html'>عرض الدورة</a>`;
+            card.innerHTML = `<h4>${c.title}</h4><p>${c.desc}</p><a class='btn' href='instructors.html'>View the course</a>`;
             coursesList.appendChild(card);
         });
     }
