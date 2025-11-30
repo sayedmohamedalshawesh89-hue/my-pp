@@ -1,56 +1,61 @@
 <!DOCTYPE html> <!-- يحدد نوع المستند كـ HTML5 ويخبر المتصفح كيف يقرأ الصفحة -->
 <html lang="ar" dir="rtl"> <!-- يحدد أن لغة الصفحة عربية والاتجاه من اليمين لليسار -->
+
 <head> <!-- بداية رأس الصفحة: يحتوي على الإعدادات والروابط غير المرئية للمستخدم -->
-<meta charset="utf-8" /> <!-- يحدد ترميز الحروف UTF-8 لدعم العربية بدون مشاكل -->
-<meta name="viewport" content="width=device-width, initial-scale=1" /> <!-- يجعل الموقع متجاوب وملائم لشاشات الهاتف والتابلت -->
-<title>اتصل بنا</title> <!-- عنوان يظهر في تبويب المتصفح -->
-<link rel="stylesheet" href="style.css" /> <!-- ربط ملف الـ CSS الذي يحتوي على التنسيق العام للموقع -->
+    <meta charset="utf-8" /> <!-- يحدد ترميز الحروف UTF-8 لدعم العربية بدون مشاكل -->
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <!-- يجعل الموقع متجاوب وملائم لشاشات الهاتف والتابلت -->
+    <title>اتصل بنا</title> <!-- عنوان يظهر في تبويب المتصفح -->
+    <link rel="stylesheet" href="style.css" /> <!-- ربط ملف الـ CSS الذي يحتوي على التنسيق العام للموقع -->
 </head>
 
 <body> <!-- بداية محتوى الصفحة المرئي للمستخدم -->
-<header class="site-header"> <!-- الهيدر العلوي للموقع الذي يحتوي على اللوجو والقائمة -->
-<div class="container"> <!-- عنصر لتوسيط وتنظيم المحتوى داخل الهيدر -->
-<h1 class="logo">منصة التعلم</h1> <!-- شعار الموقع يظهر في اليسار (أو اليمين حسب الـ CSS) -->
-<nav class="nav"> <!-- قائمة الروابط الرئيسية -->
-<a href="index.html">الرئيسية</a> <!-- رابط للصفحة الرئيسية -->
-<a href="courses.html">الدورات</a> <!-- رابط صفحة الدورات -->
-<a href="instructors.html">المدربون</a> <!-- رابط صفحة المدربين -->
-<a href="about.html">عن المنصة</a> <!-- رابط صفحة التعريف بالموقع -->
-<a href="contact.html" class="active">اتصل بنا</a> <!-- رابط صفحة الاتصال مع وضع Active لأنها الصفحة الحالية -->
-</nav>
-</div>
-</header>
+    <header class="site-header"> <!-- الهيدر العلوي للموقع الذي يحتوي على اللوجو والقائمة -->
+        <div class="container"> <!-- عنصر لتوسيط وتنظيم المحتوى داخل الهيدر -->
+            <h1 class="logo">منصة التعلم</h1> <!-- شعار الموقع يظهر في اليسار (أو اليمين حسب الـ CSS) -->
+            <nav class="nav"> <!-- قائمة الروابط الرئيسية -->
+                <a href="index.html">الرئيسية</a> <!-- رابط للصفحة الرئيسية -->
+                <a href="courses.html">الدورات</a> <!-- رابط صفحة الدورات -->
+                <a href="instructors.html">المدربون</a> <!-- رابط صفحة المدربين -->
+                <a href="about.html">عن المنصة</a> <!-- رابط صفحة التعريف بالموقع -->
+                <a href="contact.html" class="active">اتصل بنا</a>
+                <!-- رابط صفحة الاتصال مع وضع Active لأنها الصفحة الحالية -->
+            </nav>
+        </div>
+    </header>
 
 
-<main class="container contact-page"> <!-- المحتوى الرئيسي للصفحة مع إضافة كلاس خاص بتنسيق صفحة الاتصال -->
-<h2>تواصل معنا</h2> <!-- عنوان صفحة التواصل -->
+    <main class="container contact-page"> <!-- المحتوى الرئيسي للصفحة مع إضافة كلاس خاص بتنسيق صفحة الاتصال -->
+        <h2>تواصل معنا</h2> <!-- عنوان صفحة التواصل -->
 
-<form id="contact-form"> <!-- بداية نموذج الإدخال الخاص بالتواصل ومعرّف ID للتحكم به بالـ JavaScript -->
+        <form id="contact-form"> <!-- بداية نموذج الإدخال الخاص بالتواصل ومعرّف ID للتحكم به بالـ JavaScript -->
 
-<label>الاسم</label> <!-- عنوان الحقل الأول -->
-<input type="text" name="name" required /> <!-- حقل إدخال الاسم والمطلوب إدخاله قبل الإرسال -->
-
-
-<label>البريد الإلكتروني</label> <!-- عنوان حقل البريد -->
-<input type="email" name="email" required /> <!-- حقل إدخال البريد الإلكتروني مع تحقق تلقائي من الصيغة -->
+            <label>الاسم</label> <!-- عنوان الحقل الأول -->
+            <input type="text" name="name" required /> <!-- حقل إدخال الاسم والمطلوب إدخاله قبل الإرسال -->
 
 
-<label>الرسالة</label> <!-- عنوان حقل الرسالة -->
-<textarea name="message" rows="5" required></textarea> <!-- مربع نص لإدخال الرسالة مع 5 أسطر كارتفاع -->
+            <label>البريد الإلكتروني</label> <!-- عنوان حقل البريد -->
+            <input type="email" name="email" required /> <!-- حقل إدخال البريد الإلكتروني مع تحقق تلقائي من الصيغة -->
 
 
-<button class="btn" type="submit">أرسل</button> <!-- زر إرسال النموذج -->
-</form>
-</main>
+            <label>الرسالة</label> <!-- عنوان حقل الرسالة -->
+            <textarea name="message" rows="5" required></textarea> <!-- مربع نص لإدخال الرسالة مع 5 أسطر كارتفاع -->
 
 
-<footer class="site-footer"> <!-- تذييل الصفحة -->
-<div class="container"> <!-- تنسيق وتوسيط محتوى الفوتر -->
-<p>© <span id="year5"></span> منصة التعلم.</p> <!-- نص الحقوق مع span يتم ملؤه بالسنة الحالية عبر JavaScript -->
-</div>
-</footer>
+            <button class="btn" type="submit">أرسل</button> <!-- زر إرسال النموذج -->
+        </form>
+    </main>
 
 
-<script src="script.js"></script> <!-- ربط ملف JavaScript للتحكم بسنة الحقوق والتعامل مع الفورم لو لزم -->
+    <footer class="site-footer"> <!-- تذييل الصفحة -->
+        <div class="container"> <!-- تنسيق وتوسيط محتوى الفوتر -->
+            <p>© <span id="year5"></span> منصة التعلم.</p>
+            <!-- نص الحقوق مع span يتم ملؤه بالسنة الحالية عبر JavaScript -->
+        </div>
+    </footer>
+
+
+    <script src="script.js"></script> <!-- ربط ملف JavaScript للتحكم بسنة الحقوق والتعامل مع الفورم لو لزم -->
 </body>
+
 </html>
